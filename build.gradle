@@ -43,6 +43,7 @@ allprojects {
     }
     dependencies {
         implementation libs.springBootStarterWeb
+        implementation libs.swaggerUI
     }
     test {
         useJUnitPlatform()

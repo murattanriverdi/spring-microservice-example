@@ -43,3 +43,4 @@ bin/
 
 
 /docker-compose.yml
+**/application-dev.yml
