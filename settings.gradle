@@ -1,0 +1,3 @@
+rootProject.name = "microservice_app"
+include 'AuthMicroservice'
+include 'UserMicroservice'
