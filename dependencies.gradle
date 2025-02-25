@@ -1,0 +1,9 @@
+ext{
+    versions = [
+            springBoot                  : '3.4.3'
+    ]
+
+    libs = [
+            springBootStarterWeb         : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}"
+    ]
+}
