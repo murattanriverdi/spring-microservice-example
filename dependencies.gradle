@@ -9,6 +9,7 @@ ext{
     libs = [
             springBootStarterWeb        : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
             springBootDataJpa           : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+            springBootDataMongo         : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
             postgreSQL                  : "org.postgresql:postgresql:${versions.postgreSQL}",
             lombok                      : "org.projectlombok:lombok:${versions.lombok}",
             swaggerUI                   : "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.swagger}"

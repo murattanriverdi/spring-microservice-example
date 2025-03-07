@@ -26,6 +26,7 @@ public class AuthService implements IAuthService {
 
     @Override
     public Boolean login(LoginRequestDto loginRequestDto) {
+        // amaç microservisler olduğundan login işlerimi basit şekilde yapıldı.
         return authRepository.existsByUsernameAndPassword(loginRequestDto.getUsername(), loginRequestDto.getPassword());
     }
 }
