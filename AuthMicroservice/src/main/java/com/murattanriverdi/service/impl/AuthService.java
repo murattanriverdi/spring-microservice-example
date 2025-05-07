@@ -4,7 +4,7 @@ import com.murattanriverdi.dto.request.CreateUserRequestDto;
 import com.murattanriverdi.dto.request.LoginRequestDto;
 import com.murattanriverdi.dto.request.RegisterRequestDto;
 import com.murattanriverdi.entity.Auth;
-import com.murattanriverdi.manager.UserProfileManager;
+import com.murattanriverdi.manager.IUserProfileManager;
 import com.murattanriverdi.repository.AuthRepository;
 import com.murattanriverdi.service.IAuthService;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +17,7 @@ public class AuthService implements IAuthService {
 
     private final AuthRepository authRepository;
 
-    private final UserProfileManager userProfileManager;
+    private final IUserProfileManager userProfileManager;
 
     @Override
     @Transactional

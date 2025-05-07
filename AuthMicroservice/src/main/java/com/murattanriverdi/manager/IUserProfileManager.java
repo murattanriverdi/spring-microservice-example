@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import static com.murattanriverdi.config.RestApis.CREATE_USER;
 
 @FeignClient(url = "http://localhost:9091/dev/v1/user-profile", name = "userProfileManager")
-public interface UserProfileManager {
+public interface IUserProfileManager {
 
     @PostMapping(CREATE_USER)
     ResponseEntity<Boolean> createUser(@RequestBody CreateUserRequestDto dto);
