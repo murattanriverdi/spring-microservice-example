@@ -9,4 +9,6 @@ public interface IUserProfileService {
     void createUser(CreateUserRequestDto dto);
 
     List<UserProfile> getAllUsers();
+
+    String upperName(String name);
 }

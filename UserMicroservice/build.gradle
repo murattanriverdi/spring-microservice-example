@@ -3,4 +3,5 @@ dependencies {
     implementation libs.lombok
     implementation libs.springCloudConfigClient
     annotationProcessor libs.lombok
+    implementation libs.springBootDataRedis
 }
