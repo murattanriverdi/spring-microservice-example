@@ -41,6 +41,6 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-
+.idea
 /docker-compose.yml
 **/**application-dev.yml
