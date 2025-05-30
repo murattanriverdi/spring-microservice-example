@@ -8,8 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: ""
-          default-label: ""
+          uri: #config_server_source_url ex: user_github_repo
+          default-label: #git_default_branch
           skip-ssl-validation: true
-          username: ""
-          password: ""
+          username: #git_username
+          password: #git_password or git_key  ex: ${GIT_KEY} =>give environment variable access token value

@@ -1,8 +1,8 @@
 spring:
-  data:
-    mongodb:
-      host: host
-      port: 27017
-      username: username
-      password: password
-      database: database
+  cloud:
+    config:
+      uri : #config_server_base_url
+  config:
+    import : "configserver:"
+  application:
+    name:  #your_config_file

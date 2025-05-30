@@ -1,11 +1,8 @@
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    username : db_username
-    password : db_password
-    url: jdbc:postgresql://db_server/db_name
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  cloud:
+    config:
+      uri : #config_server_base_url
+  config:
+    import : "configserver:"
+  application:
+    name:  #your_config_file
