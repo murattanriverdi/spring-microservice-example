@@ -6,9 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import static com.murattanriverdi.config.RestApis.CREATE_USER;
+import static com.murattanriverdi.config.UserFeignClientUrls.USER_PROFILE_MANAGER;
+import static com.murattanriverdi.config.UserFeignClientUrls.CREATE_USER;
 
-@FeignClient(url = "http://localhost:9091/dev/v1/user-profile", name = "userProfileManager")
+@FeignClient(url = USER_PROFILE_MANAGER, name = "userProfileManager")
 public interface IUserProfileManager {
 
     @PostMapping(CREATE_USER)
